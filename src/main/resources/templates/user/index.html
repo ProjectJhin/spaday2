@@ -6,7 +6,7 @@
 </head>
 <body>
 <p>index</p>
-<p th:text="${'Hello! ' + username}" />
+<p th:text="'Hello! ' + ${user.getUsername()}" />
 <a th:href="@{/}">Service Selection</a>
 </body>
 </html>

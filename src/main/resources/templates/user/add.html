@@ -7,6 +7,8 @@
 <body>
 <p>add</p>
 <p th:if="${error}">passwords do not match</p>
+<p th:errors="${user.username}"></p>
+<p th:errors="${user.password}"></p>
 <form action="/user" method="post" >
     <input type="text" th:value="${error} ? ${username} : ''" name="username"/>
     <input type="email" th:value="${error} ? ${email} : ''" name="email" />
